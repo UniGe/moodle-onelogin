@@ -71,7 +71,7 @@
 		</div>
 	</div>';
 
-	$string['auth_onelogin_saml_idp_head'] = "Set here some info related to the IdP that will be connected with our Wordpress. You can find this values at the Onelogin's platform in the Moodle App at the Single Sign-On tab";
+	$string['auth_onelogin_saml_idp_head'] = "Set here some info related to the IdP that will be connected with our Moodle. You can find this values at the Onelogin's platform in the Moodle App at the Single Sign-On tab";
 	$string['auth_onelogin_saml_idp_sso_issuer_url'] = 'IdP Entity Id';
 	$string['auth_onelogin_saml_idp_sso_issuer_url_description'] = 'Identifier of the IdP entity. ("Issuer URL")';
 	$string['auth_onelogin_saml_idp_sso_target_url'] = 'Single Sign On Service Url';
@@ -84,15 +84,15 @@
 
 	$string['auth_onelogin_saml_options_head'] = "In this section the behavior of the plugin is set.";
 	$string['auth_onelogin_saml_auto_create_users'] = 'Create user if not exists';
-	$string['auth_onelogin_saml_auto_create_users_description'] = 'Auto-provisioning. If user not exists, Wordpress will create a new user with the data provided by the IdP. Review the Mapping section.<br />By default, the accounts are created without a password, and the user must login via SAML identity verification.';
+	$string['auth_onelogin_saml_auto_create_users_description'] = 'Auto-provisioning. If user not exists, Moodle will create a new user with the data provided by the IdP. Review the Mapping section.<br />By default, the accounts are created without a password, and the user must login via SAML identity verification.';
 	$string['auth_onelogin_saml_auto_update_users'] = 'Update user data';
-	$string['auth_onelogin_saml_auto_update_users_description'] = 'Auto-update. Wordpress will update the account of the user with the data provided by the IdP. Review the Mapping section.';
+	$string['auth_onelogin_saml_auto_update_users_description'] = 'Auto-update. Moodle will update the account of the user with the data provided by the IdP. Review the Mapping section.';
 	$string['auth_onelogin_saml_slo'] = 'Single Log Out';
 	$string['auth_onelogin_saml_slo_description'] = 'Enable/disable Single Log Out. SLO is a complex functionality, the most common SLO implementation is based on front-channel (redirections), sometimes if the SLO workflow fails a user can be blocked in an unhandled view. If the admin does not controls the set of apps involved in the SLO process maybe is better to disable this functionality due could carry more problems than benefits.';
 	$string['auth_onelogin_saml_account_matcher'] = 'Match Moodle account by';
 	$string['auth_onelogin_saml_account_matcher_description'] = "Select what field will be used in order to find the user account. We recomment to use the 'username' becouse is an attribute that the user can't change. If you select the 'email' and the user change his value in Moodle, he will lost the access.";
 
-	$string['auth_onelogin_saml_attrmapping_head'] = "Sometimes the names of the attributes sent by the IdP not match the names used by Wordpress for the user accounts. In this section we can set the mapping between IdP fields and Moodle fields.";
+	$string['auth_onelogin_saml_attrmapping_head'] = "Sometimes the names of the attributes sent by the IdP not match the names used by Moodle for the user accounts. In this section we can set the mapping between IdP fields and Moodle fields.";
 	$string['auth_onelogin_saml_username_map'] = "Username";
 	$string['auth_onelogin_saml_email_map'] = "Email Address";
 	$string['auth_onelogin_saml_firstname_map'] = "First Name";
@@ -109,7 +109,7 @@
 	$string['auth_onelogin_saml_debug_mode'] = "Debug Mode";
 	$string['auth_onelogin_saml_debug_mode_description'] = "Enable it when your are debugging the SAML workflow. Errors and Warnigs will be showed.";
 	$string['auth_onelogin_saml_strict_mode'] = "Strict Mode";
-	$string['auth_onelogin_saml_strict_mode_description'] = "If Strict mode is Enabled, then Wordpress will reject unsigned or unencrypted messages if it expects them signed or encrypted. Also will reject the messages if not strictly follow the SAML standard: Destination, NameId, Conditions ... are validated too.";
+	$string['auth_onelogin_saml_strict_mode_description'] = "If Strict mode is Enabled, then Moodle will reject unsigned or unencrypted messages if it expects them signed or encrypted. Also will reject the messages if not strictly follow the SAML standard: Destination, NameId, Conditions ... are validated too.";
 	$string['auth_onelogin_saml_sp_entity_id'] = "Service Provider Entity Id";
 	$string['auth_onelogin_saml_sp_entity_id_description'] = "Set the Entity ID for the Service Provider. If not provided, 'moodle-php-saml' will be used.<br>Set this value as a Valid Audience at the Onelogin Platform.";
 	$string['auth_onelogin_saml_nameid_encrypted'] = "Encrypt nameID";
