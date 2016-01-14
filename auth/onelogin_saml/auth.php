@@ -482,7 +482,7 @@
 			if ($pluginconfig->saml_slo == 'on') {
 				echo $OUTPUT->notification("Single Log Out is enabled. If the SLO process fail, close your browser to be sure that session of the apps are closed.", 'userinfobox notifysuccess');
 			} else {
-				echo $OUTPUT->notification("Single Log Out is disabled. If you log out from Wordpress your session at the IdP keeps alive.", 'userinfobox notifysuccess');
+				echo $OUTPUT->notification("Single Log Out is disabled. If you log out from Moodle your session at the IdP keeps alive.", 'userinfobox notifysuccess');
 			}
 
 			$fileSystemKeyExists = file_exists($CFG->dirroot.'/auth/onelogin_saml/certs/sp.key');
